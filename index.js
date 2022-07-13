@@ -1,6 +1,6 @@
 const { parse } = require("node-html-parser");
 // create class
-class Sraper {
+class Scraper {
   constructor(url) {
     this.response = this.init(url);
   }
@@ -23,7 +23,7 @@ class Sraper {
   }
 }
 // create instance of class and set site to scrape
-const scrape = new Sraper("https://www.youtube.com/watch?v=WWpn6X-jzQ0");
+const scrape = new Scraper("https://www.youtube.com/watch?v=WWpn6X-jzQ0");
 // get title tag from html
 const title = await scrape.getText("title");
 // get meta tag "keywords" from html
